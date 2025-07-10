@@ -1,10 +1,10 @@
-// 🌙 Ganti Tema (Dark Mode)
+//  Ganti Tema (Dark Mode)
 const toggleBtn = document.getElementById("toggle-mode");
 toggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
 
-// ⏰ Jam Real-Time
+//  Jam Real-Time
 function updateJam() {
   const elemenJam = document.getElementById("jam");
   const sekarang = new Date();
@@ -14,7 +14,7 @@ function updateJam() {
 setInterval(updateJam, 1000);
 updateJam();
 
-// ✅ Validasi Form Manual
+//  Validasi Form Manual
 const form = document.getElementById("form");
 form.addEventListener("submit", function (e) {
   const nama = document.getElementById("nama").value.trim();
@@ -30,7 +30,7 @@ form.addEventListener("submit", function (e) {
   }
 });
 
-// 🧠 Ambil Nama dari Local Storage
+//  Ambil Nama dari Local Storage
 const pengunjung = localStorage.getItem("pengunjung");
 if (pengunjung) {
   document.getElementById("halo").textContent = "Halo, " + pengunjung + "!";
